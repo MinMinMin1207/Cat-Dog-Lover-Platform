@@ -1,0 +1,44 @@
+.form-body {
+  margin-top: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .show-cart {
+    display: inline-flex;
+    z-index: 1;
+  }
+}
+
+.title {
+  color: var(--black);
+  font-size: 5.6rem;
+  font-weight: 600;
+}
+
+.form {
+  margin-top: 48px;
+}
+
+.submit {
+  margin-top: 9px;
+  width: 100%;
+  border-radius: 24px;
+  background: #1c7da6;
+  padding: 14px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  user-select: none;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}

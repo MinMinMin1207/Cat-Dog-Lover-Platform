@@ -1,0 +1,47 @@
+.service-wrapper {
+  width: 390px;
+  padding: 49px 40px;
+  background-color: #caedff;
+  border-radius: 10px;
+}
+
+.service-body {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-item {
+  text-align: center;
+
+  .service-box {
+    border-radius: 41px;
+    background: #fff;
+    padding: 21px;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      background-color: #ffc7ea;
+    }
+  }
+
+  .service-icon {
+    width: 46px;
+    height: 46px;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+
+  .service-name {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}

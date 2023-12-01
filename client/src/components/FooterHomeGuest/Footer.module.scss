@@ -1,0 +1,124 @@
+// Footer
+.footer {
+  margin-top: 229px;
+  padding-bottom: 20px;
+  background: #f5f7f8;
+  position: relative;
+
+  .footer-container {
+    padding: 0 39px;
+    // Header
+    .header {
+      padding: 36px 0 27px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .header-left {
+        display: inline-flex;
+        align-items: flex-end;
+        gap: 5px;
+        .logo-footer {
+          width: 45px;
+          height: 45px;
+          object-fit: cover;
+        }
+        .text-logo {
+          font-size: 3rem;
+          font-weight: 600;
+          .paws {
+            color: #ff97c0;
+          }
+          .and {
+            color: #000;
+          }
+          .whiskers {
+            color: #2ecdf9;
+          }
+        }
+      }
+      .header-right {
+        display: inline-flex;
+        align-items: center;
+        gap: 27px;
+      }
+    }
+
+    // Borders
+    .borders {
+      display: flex;
+      align-items: center;
+      .border {
+        width: 50%;
+        height: 1px;
+        background: #c0c0c0;
+      }
+      .top {
+        .icon {
+        }
+      }
+    }
+
+    // Form
+    .form {
+      margin-top: 60px;
+      // Heading
+      .heading {
+        text-align: center;
+        color: #000;
+        font-size: 4.2rem;
+        font-weight: 600;
+      }
+
+      .info {
+        width: 100%;
+        margin-top: 31px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 64px;
+      }
+
+      .address {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+
+    // Row
+    .row {
+      margin-top: 81px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .img {
+        position: absolute;
+        left: 52px;
+        bottom: 0;
+      }
+
+      .list-text {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+// Button-hero
+.button-hero {
+  padding: 15px 40px;
+  background-color: #ffc7ea;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+
+  .button-title {
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

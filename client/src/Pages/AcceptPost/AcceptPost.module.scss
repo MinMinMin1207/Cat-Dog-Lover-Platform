@@ -1,0 +1,140 @@
+.pending-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+}
+
+.heading {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.table {
+  margin-top: 12px;
+  width: 100%;
+  border-collapse: collapse;
+  td,
+  th {
+    padding: 28px;
+    border: 1px solid #d4d4d4;
+    border-collapse: collapse;
+  }
+
+  .table-header {
+    .table-item {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+
+  .author {
+    width: 25%;
+    text-align: left;
+  }
+
+  .name {
+    width: 35%;
+    text-align: left;
+  }
+
+  .price {
+    width: 15%;
+    text-align: center;
+  }
+
+  .type {
+    width: 10%;
+    text-align: center;
+  }
+
+  .approve,
+  .status {
+    width: 15%;
+    text-align: center;
+  }
+
+  .list-approve {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .icon .img {
+      width: 21px;
+      height: 21px;
+      object-fit: cover;
+    }
+  }
+}
+
+// ============================
+// Paginate
+.shop-page {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pagination {
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 14px;
+  cursor: pointer;
+}
+
+.pagination a {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ce76ac;
+  color: #ce76ac;
+
+  user-select: none;
+}
+
+.pagination__link {
+  font-weight: bold;
+  user-select: none;
+}
+
+.pagination__link--active a {
+  color: #fff;
+  background: #ce76ac;
+}
+
+.pagination__link--disabled a {
+  color: rgb(198, 197, 202);
+  border: 1px solid rgb(198, 197, 202);
+}
+
+//  =======================
+.pending-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .center {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      opacity: 0.5;
+    }
+
+    .img.active {
+      opacity: 1;
+    }
+  }
+}
+
+.accepted {
+  color: #07a6ff;
+}
+
+.rejected {
+  color: #ff002e;
+}

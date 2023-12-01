@@ -1,0 +1,140 @@
+:root {
+  --width-search: 327px;
+}
+
+// Header ========
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+// Header left
+.header-left {
+  display: flex;
+  align-items: center;
+  //   Logo
+  .logo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 24px;
+    .img-logo {
+      width: 85px;
+      height: 85px;
+      object-fit: cover;
+    }
+    .text-logo {
+      font-size: 1.6rem;
+      font-weight: 600;
+      .paws {
+        color: #ff97c0;
+      }
+      .and {
+        color: #000;
+      }
+      .whiskers {
+        color: #2ecdf9 !important;
+      }
+    }
+  }
+  //   Navbar
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    .nav-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: #000;
+      font-size: 1.5rem;
+      font-weight: 500;
+      user-select: none;
+    }
+
+    .icon-nav {
+      width: 15px;
+      height: 15px;
+      object-fit: cover;
+    }
+  }
+}
+
+// Header right
+.header-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  //   Cart
+  .search {
+    margin-left: 20px;
+    width: var(--width-search);
+  }
+
+  .cart {
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    .icon-cart {
+      width: 28px;
+      height: 28px;
+      object-fit: cover;
+    }
+    .number-cart {
+      color: #4682a9;
+    }
+  }
+
+  //   Mess
+  .mess {
+    margin-left: 16px;
+    .icon-mess {
+      width: 28px;
+      height: 28px;
+      object-fit: cover;
+    }
+  }
+  // Bell
+  .bell {
+    margin-left: 13px;
+    .icon-bell {
+      width: 28px;
+      height: 30px;
+      object-fit: cover;
+    }
+  }
+
+  .info-name {
+    margin-left: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .avatar {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .username {
+      color: #000;
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    .role {
+      margin-left: 10px;
+      font-size: 1.6rem;
+      color: #4682a9;
+    }
+  }
+}

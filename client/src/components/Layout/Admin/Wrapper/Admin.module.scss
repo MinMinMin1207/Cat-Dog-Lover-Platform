@@ -1,0 +1,31 @@
+:root {
+}
+
+.admin-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+// Sidebar
+.sidebar {
+  width: 20%;
+}
+
+.sidebar-wrapper {
+  height: 500px;
+}
+
+// Main
+.main {
+  width: 80%;
+  min-height: 100%;
+
+  .header {
+    height: 80px;
+  }
+  .body {
+    padding: 39px 42px;
+  }
+}

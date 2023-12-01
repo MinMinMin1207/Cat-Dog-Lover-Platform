@@ -1,0 +1,149 @@
+.manage-wrapper {
+}
+
+.manage-hero {
+  margin-top: 61px;
+  padding: 54px 0;
+  text-align: center;
+  background: #f3f3f3;
+
+  .heading {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.8;
+  }
+
+  .title {
+    color: #898989;
+  }
+}
+
+// Main ========
+.main {
+  margin-top: 30px;
+  padding: 30px 30px 50px;
+
+  // Header
+  .header {
+    .title {
+      color: #000;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+  }
+  // Body
+  .body {
+    margin-top: 20px;
+    border: 1px solid #d4d4d4;
+    width: 100%;
+    padding: 15px;
+
+    // pending
+    .cash {
+      .heading {
+        color: #000;
+
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 1.6;
+      }
+    }
+    .foot-desc {
+      color: #959595;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .bank {
+      margin-top: 10px;
+    }
+  }
+
+  // Table
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    //   Table header
+    .table-header {
+      .title {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.6;
+      }
+    }
+
+    // Table body
+    .table-body {
+      // Index
+      .index {
+        font-size: 1.9rem;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+
+      .username {
+        font-size: 1.9rem;
+        font-weight: 600;
+        line-height: 1.6;
+      }
+
+      .product {
+        width: 40%;
+      }
+
+      .product-list {
+        margin-top: 33px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 26px;
+
+        .product-name {
+          font-size: 1.6rem;
+          font-weight: 300;
+          line-height: 1.6;
+        }
+      }
+    }
+
+    .table-footer {
+      .table-item {
+        border: none;
+        font-size: 2.4rem;
+      }
+      .price {
+        display: inline-flex;
+        flex-direction: column;
+      }
+      .desc {
+        text-align: start;
+        color: #959595;
+        font-size: 0.88rem;
+        font-weight: 500;
+      }
+    }
+
+    .table-item {
+      border: 1px solid transparent;
+      border-right-color: #d4d4d4;
+      padding: 29px 0;
+      color: #000;
+      font-size: 1.7rem;
+      font-weight: 500;
+
+      .username {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+    .table-item:last-of-type {
+      border-right: none;
+    }
+  }
+}

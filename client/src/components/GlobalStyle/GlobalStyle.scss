@@ -1,0 +1,62 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --header-home-bg: #fbf0b2; // Background color header at HomePage
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Fredoka", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  width: max-content;
+}
+
+// Scrool bar
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+// container
+.container {
+  width: 1183px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+}

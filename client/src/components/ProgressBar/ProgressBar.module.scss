@@ -1,0 +1,177 @@
+:root {
+  --one-color: rgba(202, 237, 255, 1);
+  --two-color: rgba(128, 179, 255, 1);
+  --three-color: rgba(104, 126, 255, 1);
+}
+
+.progress-wrapper .steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+  width: 100%;
+  position: relative;
+}
+.steps .circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  font-size: 2.2rem;
+  font-weight: 500;
+  border-radius: 50%;
+  color: #000;
+  background-color: #f3f3f3;
+  border: 4px solid #f3f3f3;
+  transition: all 200ms ease;
+  transition-delay: 0s;
+}
+.steps .circle.active {
+  color: #fff;
+  transition-delay: 100ms;
+}
+.steps .circle.no_active {
+  color: #000;
+  transition-delay: 100ms;
+}
+
+.steps .circle:nth-child(1).active {
+  border-color: var(--one-color);
+  background-color: var(--one-color);
+}
+
+.steps .circle:nth-child(2).active {
+  border-color: var(--two-color);
+  background-color: var(--two-color);
+}
+
+.steps .circle:nth-child(3).active {
+  border-color: var(--three-color);
+  background-color: var(--three-color);
+}
+
+.steps .progress-bar {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #f3f3f3;
+  z-index: -1;
+}
+.progress-bar .indicator {
+  position: absolute;
+  height: 100%;
+  background: #caedff;
+  transition: all 300ms ease;
+}
+
+.progress-bar .indicator-one {
+  left: 0;
+}
+
+.progress-bar .indicator.one {
+  animation: run_one 0.7s forwards cubic-bezier(0, 0, 0, 0);
+}
+
+.progress-bar .indicator-two {
+  left: 42%;
+  // background-color: var(--two-color);
+}
+
+.progress-bar .indicator.two {
+  animation: run_two 0.7s forwards cubic-bezier(0, 0, 0, 0);
+}
+
+.progress-bar .indicator-three {
+  left: 58%;
+  background-color: var(--three-color);
+}
+
+.progress-bar .indicator.three {
+  animation: run_one 0.7s forwards cubic-bezier(0, 0, 0, 0);
+}
+
+.progress-bar .indicator-three.no_active {
+  animation: back_one 0.7s forwards cubic-bezier(0, 0, 0, 0);
+}
+
+.progress-bar .indicator-two.no_active {
+  animation: back_two 0.7s forwards cubic-bezier(0, 0, 0, 0);
+}
+
+.progress-wrapper .buttons {
+  display: flex;
+  gap: 20px;
+}
+.buttons .button {
+  padding: 8px 25px;
+  background: #4070f4;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transition: all 200ms linear;
+}
+.buttons .button:active {
+  transform: scale(0.97);
+}
+.buttons .button:disabled {
+  background: #87a5f8;
+  cursor: not-allowed;
+}
+
+@keyframes run_one {
+  0% {
+    width: 0%;
+    background-color: rgba(202, 237, 255, 1);
+  }
+  100% {
+    width: 42%;
+  }
+}
+
+@keyframes run_two {
+  0% {
+    width: 0%;
+    background-color: rgba(128, 179, 255, 0);
+  }
+  50% {
+    background-color: rgba(128, 179, 255, 0.5);
+  }
+  100% {
+    width: 16%;
+    background-color: rgba(128, 179, 255, 1);
+  }
+}
+
+@keyframes back_one {
+  0% {
+    width: 42%;
+    background-color: rgba(128, 179, 255, 1);
+  }
+  50% {
+    width: 10%;
+    background-color: rgba(128, 179, 255, 0.5);
+  }
+  100% {
+    width: 0%;
+    background-color: rgba(128, 179, 255, 0);
+  }
+}
+
+@keyframes back_two {
+  0% {
+    width: 16%;
+  }
+  50% {
+    width: 6%;
+    background-color: rgba(128, 179, 255, 0.5);
+  }
+  100% {
+    width: 0%;
+    background-color: rgba(128, 179, 255, 0);
+  }
+}

@@ -1,0 +1,45 @@
+.all-wrapper {
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-statistic {
+  .box {
+    display: inline-block;
+    color: #fff;
+
+    &:nth-child(1) .header-box {
+      background: linear-gradient(
+        90deg,
+        #ff9c72 0%,
+        rgba(255, 156, 114, 0.5) 100%
+      );
+    }
+
+    .header-box {
+      border-radius: 10px 10px 0px 0px;
+      padding: 20px;
+      .price {
+        font-size: 2.4rem;
+        font-weight: 400;
+      }
+    }
+
+    .desc {
+      margin-top: 5px;
+      .name {
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+    .icon {
+      width: 20px;
+      height: 20px;
+      object-fit: cover;
+    }
+  }
+}

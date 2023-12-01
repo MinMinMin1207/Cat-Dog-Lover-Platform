@@ -1,0 +1,229 @@
+// Main =============
+
+.main {
+  margin-top: 80px;
+  // Product
+  .product {
+    display: flex;
+    align-items: flex-start;
+    gap: 52px;
+
+    // Images product
+    .images-product {
+      width: 470px;
+      background-color: #f3f3f3;
+      border-radius: 4px;
+      .img {
+        width: 470px;
+        height: 470px;
+        object-fit: cover;
+      }
+    }
+    // Property product
+    .property-product {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .name-product {
+        color: #000;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 1.7;
+      }
+
+      .author {
+        display: inline-flex;
+        align-items: center;
+        gap: 3px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.5;
+        .name {
+          color: #ffd900;
+          text-decoration-line: underline;
+        }
+      }
+
+      .price {
+        color: #000;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      .availability {
+        .title {
+          color: #000;
+          font-size: 2rem;
+          font-weight: 500;
+        }
+        .number {
+          color: #ffd900;
+          font-size: 2rem;
+          font-weight: 300;
+        }
+      }
+
+      .desc {
+        font-size: 1.4rem;
+        font-weight: 200;
+        line-height: 1.8;
+      }
+
+      .size {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+
+        .title {
+          color: #000;
+          font-size: 2rem;
+          font-weight: 500;
+        }
+
+        .number-size {
+          font-size: 1.6rem;
+          font-weight: 600;
+        }
+      }
+
+      //   Qty
+      .qty {
+        display: inline-flex;
+        align-items: center;
+        gap: 44px;
+
+        .title {
+          color: #000;
+          font-size: 2rem;
+          font-weight: 500;
+        }
+
+        .box-qty {
+          display: inline-flex;
+          align-items: center;
+
+          gap: 20px;
+          border: 1px solid #d4d4d4;
+          background: rgba(243, 243, 243, 0);
+
+          .minus,
+          .number,
+          .plus {
+            display: inline-block;
+            text-align: center;
+            width: 30px;
+            user-select: none;
+            cursor: context-menu;
+            padding: 12px 0;
+          }
+
+          .minus:hover,
+          .plus:hover {
+            background: #caedff;
+            color: #fff;
+          }
+        }
+      }
+
+      //   action cart
+      .action-cart {
+        display: inline-flex;
+        align-content: center;
+        gap: 26px;
+        &:hover {
+          opacity: 0.9;
+        }
+
+        .cart {
+          padding: 10px 18px;
+          color: #fff;
+          font-size: 1.4rem;
+          font-weight: 500;
+          border-radius: 10px;
+          background: #ffc107;
+          user-select: none;
+        }
+
+        .ivdcart {
+          padding: 10px 18px;
+          color: #fff;
+          font-size: 1.4rem;
+          font-weight: 500;
+          border-radius: 10px;
+          background: #e3e3e3;
+          user-select: none;
+        }
+
+        .follow {
+          display: flex;
+          align-items: center;
+          padding: 8px 15px;
+          border-radius: 10px;
+          border: 1px solid #d4d4d4;
+          background: rgba(251, 240, 178, 0);
+          .icon {
+            user-select: none;
+            display: none;
+          }
+          &:hover {
+            opacity: 0.9;
+          }
+
+          .icon.hide {
+            display: inline-block;
+          }
+
+          .icon.show {
+            display: inline-block;
+          }
+        }
+      }
+
+      //   action buy
+      .action-buy {
+        display: inline-flex;
+        align-content: center;
+        gap: 26px;
+        &:hover {
+          opacity: 0.9;
+        }
+
+        .buy {
+          padding: 15px 24px;
+          color: #fff;
+          font-size: 1.4rem;
+          font-weight: 500;
+          border-radius: 10px;
+          background: #ffc107;
+          user-select: none;
+        }
+      }
+    }
+  }
+
+  .actions {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    user-select: none;
+    .action {
+      padding: 15px 42px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 600;
+      user-select: none;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .accept {
+      background: #07a6ff;
+    }
+    .reject {
+      background: #ff002e;
+    }
+  }
+}

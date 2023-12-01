@@ -1,0 +1,167 @@
+.pending-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+}
+
+.heading {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.table {
+  margin-top: 12px;
+  width: 100%;
+  border-collapse: collapse;
+  td,
+  th {
+    padding: 28px;
+    border: 1px solid #d4d4d4;
+    border-collapse: collapse;
+  }
+
+  .table-header {
+    .table-item {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+
+  .ID {
+    width: 1%;
+    text-align: left;
+  }
+
+  .fullName {
+    width: 20%;
+    text-align: left;
+  }
+
+  .userName {
+    width: 18%;
+    text-align: center;
+  }
+
+  .email {
+    width: 15%;
+    text-align: center;
+  }
+
+  .reason {
+    width: 25%;
+  }
+
+  .dob {
+    width: 12%;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .banUser {
+    width: 1%;
+    text-align: center;
+  }
+  .approve,
+  .status {
+    width: 18%;
+    text-align: center;
+  }
+
+  .list-approve {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .icon .img {
+      width: 21px;
+      height: 21px;
+      object-fit: cover;
+    }
+  }
+}
+
+// ============================
+// Paginate
+.shop-page {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pagination {
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 14px;
+  cursor: pointer;
+}
+
+.pagination a {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ce76ac;
+  color: #ce76ac;
+
+  user-select: none;
+}
+
+.pagination__link {
+  font-weight: bold;
+  user-select: none;
+}
+
+.pagination__link--active a {
+  color: #fff;
+  background: #ce76ac;
+}
+
+.pagination__link--disabled a {
+  color: rgb(198, 197, 202);
+  border: 1px solid rgb(198, 197, 202);
+}
+
+//  =======================
+.pending-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .center {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      opacity: 0.5;
+    }
+
+    .img.active {
+      opacity: 1;
+    }
+  }
+}
+
+.available {
+  color: #07a6ff;
+  user-select: none;
+  &:hover {
+    background: #07a6ff;
+    color: #fff;
+  }
+}
+
+.rejected {
+  color: #ff002e;
+}
+
+.ban {
+  color: #ff002e;
+  user-select: none;
+  &:hover {
+    background: #ff002e;
+    color: #fff;
+  }
+}

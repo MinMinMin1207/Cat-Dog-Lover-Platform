@@ -1,0 +1,153 @@
+.search-wrapper {
+  width: 200px;
+}
+
+.search {
+  position: relative;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid #bee7f4;
+
+  .input {
+    padding: 0 30px 0 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+  }
+}
+
+.search-result {
+  padding: 10px 6px;
+  height: 400px;
+  width: var(--width-search);
+  border-radius: 5px;
+  background: #fff;
+  overflow-y: scroll;
+
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  .list-filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .filter {
+      border-radius: 5px;
+      padding: 6px 34px;
+      color: #8b8b8b;
+      background-color: #fff;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      user-select: none;
+    }
+    .active,
+    .filter:hover {
+      color: #000;
+      box-shadow: 0px 1px 7.5px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+  .border {
+    margin-top: 10px;
+    width: 100%;
+    height: 1px;
+    background: #c1c1c1;
+  }
+  .list-search {
+    margin-top: 10px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+// List-search
+.list-search {
+  .search-item {
+    width: 100%;
+    padding: 20px 8px;
+
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    .image {
+      display: inline-block;
+      background: #f3f3f3;
+    }
+    .img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+
+    .info-box {
+      word-break: break-all;
+      .title {
+        display: inline-block;
+        margin-right: 5px;
+        line-height: 1.4;
+        font-size: 1.6rem;
+        font-weight: 450;
+      }
+      .name {
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+    .info-box + .info-box {
+      margin-top: 10px;
+    }
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+}
+
+// Loading
+.loading {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translate(-50%, 0);
+  color: rgba(22, 24, 35, 0.34);
+  animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+  from {
+    transform: translateY(-50%) rotate(0);
+  }
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+.more {
+  font-size: 1.6rem;
+  font-weight: 500;
+}

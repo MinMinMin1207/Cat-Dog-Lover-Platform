@@ -1,0 +1,137 @@
+.blog-wrapper {
+  .show-cart {
+    display: inline-flex;
+    z-index: 1;
+  }
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.main {
+  margin-top: 40px;
+  padding: 10px 40px;
+}
+
+.publish {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+
+  .action {
+    font-size: 2rem;
+    font-weight: 300;
+    user-select: none;
+    color: #ccc;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+// Form blog ====================
+.form-blog {
+  margin-top: 30px;
+}
+// Title
+
+.form-title {
+  width: 100%;
+  font-size: 3.8rem;
+  border: none;
+  outline: none;
+  resize: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ccc;
+}
+
+// Upload thumbnail
+
+.upload-img {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  .title {
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+
+  .input-file {
+    font-size: 1.5rem;
+    width: 100px;
+  }
+
+  .upload {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .icon {
+      color: #ccc;
+      transition: all 0.2s;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+// Tool blog
+.tool-blog {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  .box {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    color: #757575;
+    position: relative;
+
+    .tool {
+      padding: 2px 5px;
+      user-select: none;
+
+      &:hover {
+        color: #000;
+      }
+
+      &:hover > .desc {
+        opacity: 1;
+      }
+    }
+
+    .desc {
+      position: absolute;
+      bottom: -80%;
+      opacity: 0;
+      font-size: 1.5rem;
+      background: #000;
+      color: #ccc;
+      padding: 2px 4px;
+    }
+  }
+}
+
+// Content
+.content {
+  margin-top: 20px;
+}
+
+.form-content {
+  width: 100%;
+  height: 500px;
+}
+
+.text {
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  resize: none;
+  padding-bottom: 3px;
+}

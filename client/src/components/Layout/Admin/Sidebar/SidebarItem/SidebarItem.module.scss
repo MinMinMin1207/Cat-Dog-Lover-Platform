@@ -1,0 +1,54 @@
+.sidebar {
+}
+
+.heading {
+  padding-bottom: 23px;
+  color: #999;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.menu {
+  user-select: none;
+  padding: 15px 20px;
+  .row {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .text {
+    display: inline-flex;
+    align-items: center;
+    gap: 23px;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+    user-select: none;
+  }
+}
+
+.sidebar .menu .icon {
+  transition: transform 0.3s;
+  transform: rotate(0);
+
+  user-select: none;
+}
+
+.sidebar.open > .menu > .row > .icon {
+  transform: rotate(180deg);
+}

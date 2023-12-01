@@ -1,0 +1,8 @@
+{
+  "vnp_TmnCode": "FO0KHYTZ",
+  "vnp_HashSecret": "MEFCBCYQENTMGNDTKDPTCGAVLXNRYJDE",
+  "vnp_Url": "http://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_Api": "http://sandbox.vnpayment.vn/merchant_webapi/api/transaction",
+  "vnp_ReturnUrl": "http://localhost:3000/vnpay/vnpay_return",
+  "vnp_PetReturnUrl": "http://localhost:3000/vnpay/vnpay_petReturn"
+}
